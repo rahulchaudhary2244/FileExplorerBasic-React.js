@@ -2,3 +2,14 @@
   font-family: sans-serif;
   text-align: left;
 }
+
+.bg-style {
+  padding: 5px;
+  border: 2px solid transparent;
+}
+
+.bg-style:hover {
+  background-color: rgb(182, 178, 178);
+  border: 2px solid rgba(88, 85, 85, 0.822);
+  border-radius: 5px;
+}
