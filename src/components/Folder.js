@@ -7,7 +7,7 @@ export default function Folder({ explorer }) {
     <>
       {explorer.isFolder && (
         <div style={{ cursor: "pointer" }}>
-          <div onClick={() => setExpand(!expand)}>
+          <div className="bg-style" onClick={() => setExpand(!expand)}>
             <span>{`🗂️ ${explorer.name}`}</span>
           </div>
           {expand && (
@@ -25,7 +25,7 @@ export default function Folder({ explorer }) {
       )}
 
       {!explorer.isFolder && (
-        <div style={{ cursor: "default" }}>
+        <div className="bg-style">
           <span>{`📁 ${explorer.name}`}</span>
         </div>
       )}
